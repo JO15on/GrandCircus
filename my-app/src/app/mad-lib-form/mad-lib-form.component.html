@@ -1,0 +1,8 @@
+<span [hidden]="editMode"> {{madLibText}} </span>
+
+<span [hidden]="!editMode">
+    <form (ngSubmit)="toggleEditMode()">
+        <input [(ngModel)]="madLibText" name="madLibText" [placeholder]="placeholder" />
+        <button> Save </button>
+    </form>
+</span>

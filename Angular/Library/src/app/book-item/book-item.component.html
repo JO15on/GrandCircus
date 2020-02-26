@@ -1,0 +1,9 @@
+<h3> {{book.bookTitle}} </h3>
+<h4> By: {{book.author}} </h4>
+<h5> ISBN {{book.ISBN}} </h5>
+<p>
+    <button (click)="toggleWishList()"> 
+        <span *ngIf="!book.inWishList">Add to </span>
+        <span *ngIf="book.inWishList">Remove from </span>
+         Wishlist </button>
+</p>

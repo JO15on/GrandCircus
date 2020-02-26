@@ -1,0 +1,58 @@
+html {
+    background: #f9fafc;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+    color: #69696a;
+}
+
+p {
+    color: #69696a;     
+    border-left: solid #69696a;
+    padding-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Main {
+    padding: 0;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.menu_function {
+    color: #69696a;
+}
+
+.Hire {
+    color: #FFF;
+    background-color: #000;
+    text-decoration: none;
+    text-align: center;
+    width: auto;
+    display: block;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.Scroll {
+    color: #FFF;
+    background-color: #000;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-radius: 30px;
+    width: auto;
+    padding: 10px;
+}   
+
+
+

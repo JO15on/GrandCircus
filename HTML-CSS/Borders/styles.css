@@ -1,0 +1,97 @@
+/* Goofy borders around everything to help us see the layout. */
+* {
+    margin: 5px;
+    padding: 3px;
+}
+/* body takes up full viewport and extends all the way to the edges. */
+html, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    top: 0;
+    right: 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+}
+
+nav span.Title {
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main article.Main_Article {
+    flex-grow: 3;
+    width: 75%;
+}
+
+main article.Sidebar {
+    width: 25%;
+    background-color: lightgray;
+}
+
+footer nav   {
+    height: 100%;
+    display: flex;
+}
+
+nav span.Copyright {
+    flex-grow: 1;
+}
+
+nav span.Link {
+    justify-content: space-evenly;
+}
+
+footer {
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+    main {
+        flex-direction: row;
+    }
+
+    header nav {
+        flex-direction: row;
+    }
+
+    footer {
+        display: flex;
+    }
+}

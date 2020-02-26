@@ -1,0 +1,48 @@
+html {
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+}
+
+main p {
+    padding-top: 100px;
+}
+
+nav {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #551A8B;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav span.Title {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Mobile Sizing */
+@media only screen and (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav span.Title {
+        order: 2;
+        text-align: right;
+    }
+}

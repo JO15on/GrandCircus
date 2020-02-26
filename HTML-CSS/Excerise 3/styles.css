@@ -1,0 +1,27 @@
+html {
+    font-family: Lato, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #551A8B;
+}
+
+header>nav {
+    float: right;
+    width: 100%;
+}
+
+header>nav>span.Title {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header>nav>span.Links {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+header>nav a {
+    display: inline-block;
+}

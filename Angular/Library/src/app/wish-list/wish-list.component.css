@@ -1,0 +1,7 @@
+.wish-list {
+    display: flex;
+}
+
+.wish-list > * {
+    margin: 1rem;
+}
