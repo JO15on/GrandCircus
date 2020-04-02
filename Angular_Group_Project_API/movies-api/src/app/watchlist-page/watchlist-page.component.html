@@ -1,9 +1,0 @@
-<div class="card_container">
-    <div class="card" *ngFor="let post of posts">
-        <button (click)="closePopout(i)" class="close"><i class="material-icons">close</i></button>
-        <button (click)="addMovie(post)"><i class="material-icons">favorite</i></button>
-        <h1>{{post.title}}</h1>
-        <img src="https://image.tmdb.org/t/p/w500/{{post.poster_path}}" class="movie_poster"/>
-        <app-overview [post]="post" ></app-overview>
-    </div>
-</div>
