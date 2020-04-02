@@ -1,0 +1,9 @@
+<div *ngIf="open" class="form-wrapper">
+    <span class="overview">
+        <i class="material-icons" (click)="closePopout()">close</i>
+        <img src="https://image.tmdb.org/t/p/w500/{{post.poster_path}}" class="thumbnail"/>
+        <p>{{post.overview}}</p>
+    </span>
+</div>
+
+<button (click)="openModal()" class="info">More info</button>
